@@ -1,0 +1,10 @@
+/* line 3, main/static/main/sass/main.scss */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: aqua !important; }
+
+/* line 9, main/static/main/sass/main.scss */
+#main-content {
+  background-color: beige;
+  font-size: 20px; }
