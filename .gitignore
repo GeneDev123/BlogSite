@@ -5,4 +5,6 @@ db.sqlite3
 GeneTech/GeneTech/settings.py
 GeneTech/GeneTech/__pycache__
 GeneTech/main/__pycache__
+GeneTech/main/migrations/
+GeneTech/api/migrations/
 .env
