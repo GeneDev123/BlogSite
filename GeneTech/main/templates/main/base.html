@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'main/head.html' %}
+  
+  <title>
+    {% block page_title %}
+      GeneTech
+    {% endblock %}
+  </title>
+
+</head>
+<body>
+  <div id="main-content">
+
+    {% include 'main/navigation.html' %}
+
+    <main>
+      {% block main_content %}
+      {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </div>
+</body>
+</html>
