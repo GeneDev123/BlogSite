@@ -1,0 +1,42 @@
+#navigation{
+  background-color: $primary-color;
+  padding: 10px 0;
+  
+  nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        
+        a {
+          color: #fff;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+      ul {
+        display: block;
+        
+        li {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

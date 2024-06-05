@@ -1,12 +1,5 @@
-$primary-color: #333;
-
-body{
-  font-family: Arial, sans-serif;
-  color: $primary-color;
-  background-color: aqua !important;
-}
-
-#main-content{
-  background-color: beige;
-  font-size: 20px;
-}
+@import 'core.scss';
+@import 'navigation.scss';
+@import 'home.scss';
+@import 'posts.scss';
+@import 'post-form.scss';

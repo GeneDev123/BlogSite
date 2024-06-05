@@ -8,6 +8,7 @@ django = "*"
 python-dotenv = "*"
 django-compressor = "*"
 django-libsass = "*"
+djangorestframework = "*"
 
 [dev-packages]
 
