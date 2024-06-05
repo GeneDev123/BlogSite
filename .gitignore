@@ -1,0 +1,8 @@
+*.pyc
+*.pyo
+__pycache__
+db.sqlite3
+GeneTech/GeneTech/settings.py
+GeneTech/GeneTech/__pycache__
+GeneTech/main/__pycache__
+.env

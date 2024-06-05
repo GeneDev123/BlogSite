@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  {% load static %}
+  {% include 'main/head.html' %}
+  
+  <title>
+    {% block page_title %}
+      GeneTech
+    {% endblock %}
+  </title>
+
+</head>
+<body>
+  This should have the background color
+  <div id="main-content">
+
+    {% include 'main/navigation.html' %}
+
+    <main>
+      {% block main_content %}
+      {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </div>
+</body>
+</html>
