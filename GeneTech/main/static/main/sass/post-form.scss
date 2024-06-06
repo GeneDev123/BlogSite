@@ -4,7 +4,7 @@
   margin: 0 auto; /* Centering the form horizontally */
   
   h1 {
-    color: #333;
+    color: $primary-color;
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
@@ -33,7 +33,7 @@
     button[type="submit"] {
       display: block; /* Displaying the button as a block element */
       margin: 20px auto 0; /* Adding top margin and centering horizontally */
-      background-color: #555;
+      background-color: $primary-color;
       color: #fff;
       border: none;
       padding: 10px 20px;
@@ -42,7 +42,7 @@
       font-size: 16px;
       
       &:hover {
-        background-color: #333;
+        background-color: $primary-color;
       }
     }
   }

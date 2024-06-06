@@ -2,7 +2,7 @@
   padding: 20px;
   
   h1 {
-    color: #333;
+    color: $primary-color;
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
@@ -10,7 +10,7 @@
   
   a {
     display: inline-block;
-    background-color: #555;
+    background-color: $primary-color;
     color: #fff;
     text-decoration: none;
     padding: 8px 16px;
@@ -19,7 +19,7 @@
     font-size: 16px; /* Adjusted font size */
     
     &:hover {
-      background-color: #333; /* Darker color on hover */
+      background-color: $primary-color; /* Darker color on hover */
     }
   }
   
@@ -33,7 +33,7 @@
       padding-bottom: 20px;
       
       h2 {
-        color: #333;
+        color: $primary-color;
         font-size: 28px;
         margin-bottom: 10px;
       }
