@@ -1,7 +1,7 @@
 #post-form {
   padding: 20px;
-  max-width: 600px; /* Limiting maximum width */
-  margin: 0 auto; /* Centering the form horizontally */
+  max-width: 600px; 
+  margin: 0 auto; 
   
   h1 {
     color: $primary-color;
@@ -18,21 +18,21 @@
   }
   
   form {
-    text-align: left; /* Aligning the form elements to the left */
+    text-align: left;
     
     textarea {
-      width: 100%; /* Making the textarea full width */
-      min-height: 200px; /* Setting a minimum height */
-      padding: 10px; /* Adding padding for better readability */
-      border-radius: 5px; /* Rounded corners */
-      border: 1px solid #ccc; /* Adding a subtle border */
+      width: 100%;
+      min-height: 200px; 
+      padding: 10px; 
+      border-radius: 5px; 
+      border: 1px solid #ccc; 
       font-size: 16px;
       line-height: 1.6;
     }
     
     button[type="submit"] {
-      display: block; /* Displaying the button as a block element */
-      margin: 20px auto 0; /* Adding top margin and centering horizontally */
+      display: block; 
+      margin: 20px auto 0; 
       background-color: $primary-color;
       color: #fff;
       border: none;
@@ -58,7 +58,7 @@
     
     form {
       textarea {
-        min-height: 150px; /* Adjusting minimum height for smaller screens */
+        min-height: 150px; 
       }
       
       button[type="submit"] {

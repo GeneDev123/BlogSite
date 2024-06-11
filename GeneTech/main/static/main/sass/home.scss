@@ -2,60 +2,119 @@
   header {
     background-color: $primary-color;
     color: #fff;
-    height: $header-height;
+    min-height: 800px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 1rem;
+    
+    .profile-image-container{
+      width: 50%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      display: none;
+      
+      .profile-pic{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: block;
+      }
+    }
 
     .header-content {
-        max-width: 800px;
-        text-align: center;
+      width: 50%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
 
-        .profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 1rem;
+      .name-container{
+        font-size: 100px;
+        font-family: monospace;
+        position: relative;
+        
+        .name{
+          width: 500px;
+          padding: 20px;
+          left: 100px;
+          top: 0%;
+          transform: translateY(-50%);
+          background-color: rgba($primary-color, 0.4);
+          border: 4px solid $secondary-color;
+          border-radius: 10px;
+          text-shadow: 5px 10px black;
+          // overflow: hidden;
         }
 
-        h1 {
-            margin-bottom: 0.5rem;
+        .title{
+          font-size: 20px;
+          padding: 30px 0px;
+          text-shadow: none;
+          font-weight: bolder;
+          font-family: cursive;
         }
+      }
 
-        p {
-            font-size: 1.2rem;
+      .social-media-links-container{
+        position: relative;
+
+        .links-container{
+          position: absolute;
+          bottom: -340px;
+          right: 80px;
+
+          .social{
+            background-color: $background-color;
+            color: $primary-color;
+            padding: 10px;
+            margin: 5px;
+            padding: 5px;
+            font-size: 35px;
+            border-radius: 10px;
+            display: none;
+          }
+
+          .social:hover{
+            font-size: 60px;
+          }
+
+          .email-container{
+            padding-top: 15px;
+            font-size: 13px;
+          }
         }
+      }
     }
-}
+  }
 
-nav {
-    background-color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.navigation-below-header {
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        flex-wrap: wrap;
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
 
-        li {
-            margin: 0.5rem 1rem;
+    li {
+      margin: 0.5rem 1rem;
 
-            a {
-                text-decoration: none;
-                color: $primary-color;
-                font-weight: bold;
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
 
-                &:hover {
-                    color: $secondary-color;
-                }
-            }
+        &:hover {
+          color: $secondary-color;
         }
+      }
     }
+  }
 }
 
 main {
@@ -130,7 +189,7 @@ footer {
         }
     }
 
-    nav ul {
+    .navigation-below-header ul {
         flex-direction: column;
 
         li {
