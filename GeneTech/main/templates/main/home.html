@@ -7,14 +7,36 @@
 {% block main_content %}
   <div id="home">
     <header>
+      <div class="profile-image-container">
+        <img src="{% static 'main/assets/profile_pic.jpg' %}" alt="Profile Picture" class="profile-pic" id="profile-pic">
+      </div>
       <div class="header-content">
-          <img src="path/to/your/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-          <h1>Eugene M. Reyes</h1>
-          <p>Software Developer | Full Stack Developer</p>
+        <div class="name-container">
+          <div class="name position-absolute" id="name-content">
+            <div class="first-name">
+              Eugene
+            </div>
+            <div class="last-name">
+              Reyes
+            </div>
+            <div class="title">
+              Software Developer | Full Stack Web Developer
+            </div>
+          </div>
+        </div>
+
+        <div class="social-media-links-container">
+          <div class="links-container">
+            <a href="{{ social_media_links.fb_link }}" target="_blank" id="fb_link" class="social fa-brands fa-facebook"></a>
+            <a href="{{ social_media_links.ig_link }}" target="_blank" id="ig_link" class="social fa-brands fa-instagram"></a>
+            <a href="{{ social_media_links.linkedin_link }}" target="_blank" id="linkedin_link" class="social fa-brands fa-linkedin"></a>
+            <a href="{{ social_media_links.github_link }}" target="_blank" id="github_link" class="social fa-brands fa-github"></a>
+          </div>
+        </div>
       </div>
   </header>
 
-  <nav>
+  <nav class="navigation-below-header">
       <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -92,9 +114,22 @@
   <footer>
       <section id="contact">
           <h2>Contact</h2>
-          <p>Email: <a href="mailto:eugenemreyes123@gmail.com">eugenemreyes123@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-reyes">Eugene Reyes LinkedIn Profile</a></p>
       </section>
   </footer>
   </div>
+
+  <script>
+    //Container animations when page is loaded.
+    $(document).ready(function(){
+
+      $(".profile-image-container").fadeIn(2000);
+      $("#name-content").animate({
+        left: "-260px"
+      }, 500);
+      $("#fb_link").fadeIn(1500);
+      $("#ig_link").fadeIn(2000);
+      $("#linkedin_link").fadeIn(2500);
+      $("#github_link").fadeIn(3000);
+    });
+  </script>
 {% endblock %}
