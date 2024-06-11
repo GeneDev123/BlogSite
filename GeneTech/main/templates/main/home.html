@@ -6,7 +6,130 @@
 
 {% block main_content %}
   <div id="home">
-    <h2>GeneTech Inovations</h2>
-    <p>This is the home page.</p>
+    <header>
+      <div class="profile-image-container">
+        <img src="{% static 'main/assets/profile_pic.jpg' %}" alt="Profile Picture" class="profile-pic" id="profile-pic">
+      </div>
+      <div class="header-content">
+        <div class="name-container">
+          <div class="name position-absolute" id="name-content">
+            <div class="first-name">
+              Eugene
+            </div>
+            <div class="last-name">
+              Reyes
+            </div>
+            <div class="title">
+              Software Developer | Full Stack Web Developer
+            </div>
+          </div>
+        </div>
+
+        <div class="social-media-links-container">
+          <div class="links-container">
+            <a href="{{ social_media_links.fb_link }}" target="_blank" id="fb_link" class="social fa-brands fa-facebook"></a>
+            <a href="{{ social_media_links.ig_link }}" target="_blank" id="ig_link" class="social fa-brands fa-instagram"></a>
+            <a href="{{ social_media_links.linkedin_link }}" target="_blank" id="linkedin_link" class="social fa-brands fa-linkedin"></a>
+            <a href="{{ social_media_links.github_link }}" target="_blank" id="github_link" class="social fa-brands fa-github"></a>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <nav class="navigation-below-header">
+      <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+
+  <main>
+      <section id="about">
+          <h2>About Me</h2>
+          <p>Hi, I'm Eugene M. Reyes, a dedicated software developer with a passion for creating robust web applications and data-driven solutions. With expertise in Python, JavaScript, and PHP, I specialize in Full Stack Development, Data Analytics, and Machine Learning.</p>
+      </section>
+
+      <section id="experience">
+          <h2>Professional Experience</h2>
+          <div class="experience-item">
+              <h3>Full Stack Developer</h3>
+              <p>Company Name | Jan 2020 - Present</p>
+              <p>Developed and maintained web applications using Django and React. Implemented machine learning algorithms to enhance data analytics capabilities.</p>
+          </div>
+          <div class="experience-item">
+              <h3>Software Developer</h3>
+              <p>Company Name | Jan 2018 - Dec 2019</p>
+              <p>Worked on various web development projects using PHP and WordPress. Improved website performance and user experience through efficient coding practices.</p>
+      </section>
+
+      <section id="skills">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>WordPress</li>
+              <li>Django</li>
+              <li>Data Analytics</li>
+              <li>Machine Learning</li>
+              <li>AI</li>
+              <li>Web Development</li>
+              <li>Software Development</li>
+          </ul>
+      </section>
+
+      <section id="portfolio">
+          <h2>Portfolio</h2>
+          <div class="portfolio-item">
+              <img src="path/to/project-image.jpg" alt="Project Image">
+              <h3>Project Title</h3>
+              <p>Brief description of the project, technologies used, and your role.</p>
+          </div>
+          <!-- Add more portfolio items as needed -->
+      </section>
+
+      <section id="testimonials">
+          <h2>Testimonials</h2>
+          <div class="testimonial-item">
+              <p>"Eugene is an outstanding developer with a keen eye for detail. His work on our project was exceptional." - Client Name</p>
+          </div>
+          <!-- Add more testimonials as needed -->
+      </section>
+
+      <section id="education">
+          <h2>Education</h2>
+          <div class="education-item">
+              <h3>Bachelor's Degree in Computer Science</h3>
+              <p>University Name | Year</p>
+              <p>Graduated with honors, specialized in software development and data analysis.</p>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+      <section id="contact">
+          <h2>Contact</h2>
+      </section>
+  </footer>
   </div>
+
+  <script>
+    //Container animations when page is loaded.
+    $(document).ready(function(){
+
+      $(".profile-image-container").fadeIn(2000);
+      $("#name-content").animate({
+        left: "-260px"
+      }, 500);
+      $("#fb_link").fadeIn(1500);
+      $("#ig_link").fadeIn(2000);
+      $("#linkedin_link").fadeIn(2500);
+      $("#github_link").fadeIn(3000);
+    });
+  </script>
 {% endblock %}

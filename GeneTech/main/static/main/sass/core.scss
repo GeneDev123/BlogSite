@@ -1,4 +1,7 @@
-$primary-color: #333;
+$primary-color: #5C5470;
+$secondary-color: #B9B4C7;
+$text-color: #352F44;
+$background-color: #FAF0E6;
 
 body{
   margin: 0px;
@@ -15,4 +18,8 @@ ul{
 
 #main-content{
   font-size: 20px;
+}
+
+.position-absolute{
+  position: absolute;
 }

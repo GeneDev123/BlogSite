@@ -5,9 +5,27 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .models import BlogPost
 from .forms import BlogPostForm
+from django.conf import settings
+
+FB_LINK = settings.FB_LINK
+IG_LINK = settings.IG_LINK
+GITHUB_LINK = settings.GITHUB_LINK
+LINKEDIN_LINK = settings.LINKEDIN_LINK
 
 def home(request):
-  return render(request, 'main/home.html', {})
+
+  social_media_links = {
+    'fb_link': FB_LINK,
+    'ig_link': IG_LINK,
+    'github_link': GITHUB_LINK,
+    'linkedin_link': LINKEDIN_LINK,    
+  }
+
+  context = {
+    'social_media_links': social_media_links,
+  }
+
+  return render(request, 'main/home.html', context)
 
 class BlogPostListView(ListView):
   model = BlogPost
