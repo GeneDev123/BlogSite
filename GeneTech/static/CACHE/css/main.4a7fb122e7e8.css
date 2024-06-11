@@ -1,4 +1,4 @@
-/* line 7, main/static/main/sass/core.scss */
+/* line 6, main/static/main/sass/core.scss */
 body {
   margin: 0px;
   padding: 0px;
@@ -7,43 +7,48 @@ body {
   font-family: Arial, sans-serif;
   color: #5C5470; }
 
-/* line 16, main/static/main/sass/core.scss */
+/* line 15, main/static/main/sass/core.scss */
 ul {
   margin: 0px; }
 
-/* line 20, main/static/main/sass/core.scss */
+/* line 19, main/static/main/sass/core.scss */
 #main-content {
   font-size: 20px; }
+
+/* line 23, main/static/main/sass/core.scss */
+.position-absolute {
+  position: absolute; }
 
 /* line 1, main/static/main/sass/navigation.scss */
 #navigation {
   background-color: #5C5470;
-  padding: 10px 0; }
-  /* line 5, main/static/main/sass/navigation.scss */
+  padding: 10px 0;
+  font-size: 25px; }
+  /* line 6, main/static/main/sass/navigation.scss */
   #navigation nav {
     padding-left: 10px;
     padding-right: 10px; }
-    /* line 9, main/static/main/sass/navigation.scss */
+    /* line 10, main/static/main/sass/navigation.scss */
     #navigation nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0; }
-      /* line 14, main/static/main/sass/navigation.scss */
+      /* line 15, main/static/main/sass/navigation.scss */
       #navigation nav ul li {
         display: inline-block;
         margin-right: 20px; }
-        /* line 18, main/static/main/sass/navigation.scss */
+        /* line 19, main/static/main/sass/navigation.scss */
         #navigation nav ul li a {
           color: #fff;
           text-decoration: none; }
-          /* line 22, main/static/main/sass/navigation.scss */
+          /* line 23, main/static/main/sass/navigation.scss */
           #navigation nav ul li a:hover {
             text-decoration: underline; }
   @media screen and (max-width: 768px) {
-    /* line 32, main/static/main/sass/navigation.scss */
+    /* line 33, main/static/main/sass/navigation.scss */
     #navigation nav ul {
       display: block; }
-      /* line 35, main/static/main/sass/navigation.scss */
+      /* line 36, main/static/main/sass/navigation.scss */
       #navigation nav ul li {
         display: block;
         margin-bottom: 10px; } }
@@ -51,78 +56,129 @@ ul {
 #home header {
   background-color: #5C5470;
   color: #fff;
-  height: 150px;
+  min-height: 800px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem; }
-  /* line 12, main/static/main/sass/home.scss */
+  text-align: center; }
+  /* line 11, main/static/main/sass/home.scss */
+  #home header .profile-image-container {
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none; }
+    /* line 18, main/static/main/sass/home.scss */
+    #home header .profile-image-container .profile-pic {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      display: block; }
+  /* line 27, main/static/main/sass/home.scss */
   #home header .header-content {
-    max-width: 800px;
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     text-align: center; }
-    /* line 16, main/static/main/sass/home.scss */
-    #home header .header-content .profile-pic {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 1rem; }
-    /* line 24, main/static/main/sass/home.scss */
-    #home header .header-content h1 {
-      margin-bottom: 0.5rem; }
-    /* line 28, main/static/main/sass/home.scss */
-    #home header .header-content p {
-      font-size: 1.2rem; }
+    /* line 34, main/static/main/sass/home.scss */
+    #home header .header-content .name-container {
+      font-size: 100px;
+      font-family: monospace;
+      position: relative; }
+      /* line 39, main/static/main/sass/home.scss */
+      #home header .header-content .name-container .name {
+        width: 500px;
+        padding: 20px;
+        left: 100px;
+        top: 0%;
+        transform: translateY(-50%);
+        background-color: rgba(92, 84, 112, 0.4);
+        border: 4px solid #B9B4C7;
+        border-radius: 10px;
+        text-shadow: 5px 10px black; }
+      /* line 52, main/static/main/sass/home.scss */
+      #home header .header-content .name-container .title {
+        font-size: 20px;
+        padding: 30px 0px;
+        text-shadow: none;
+        font-weight: bolder;
+        font-family: cursive; }
+    /* line 61, main/static/main/sass/home.scss */
+    #home header .header-content .social-media-links-container {
+      position: relative; }
+      /* line 64, main/static/main/sass/home.scss */
+      #home header .header-content .social-media-links-container .links-container {
+        position: absolute;
+        bottom: -340px;
+        right: 80px; }
+        /* line 69, main/static/main/sass/home.scss */
+        #home header .header-content .social-media-links-container .links-container .social {
+          background-color: #FAF0E6;
+          color: #5C5470;
+          padding: 10px;
+          margin: 5px;
+          padding: 5px;
+          font-size: 35px;
+          border-radius: 10px;
+          display: none; }
+        /* line 80, main/static/main/sass/home.scss */
+        #home header .header-content .social-media-links-container .links-container .social:hover {
+          font-size: 60px; }
+        /* line 84, main/static/main/sass/home.scss */
+        #home header .header-content .social-media-links-container .links-container .email-container {
+          padding-top: 15px;
+          font-size: 13px; }
 
-/* line 34, main/static/main/sass/home.scss */
-#home nav {
+/* line 93, main/static/main/sass/home.scss */
+#home .navigation-below-header {
   background-color: #fff;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
-  /* line 39, main/static/main/sass/home.scss */
-  #home nav ul {
+  /* line 98, main/static/main/sass/home.scss */
+  #home .navigation-below-header ul {
     display: flex;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap; }
-    /* line 45, main/static/main/sass/home.scss */
-    #home nav ul li {
+    /* line 104, main/static/main/sass/home.scss */
+    #home .navigation-below-header ul li {
       margin: 0.5rem 1rem; }
-      /* line 48, main/static/main/sass/home.scss */
-      #home nav ul li a {
+      /* line 107, main/static/main/sass/home.scss */
+      #home .navigation-below-header ul li a {
         text-decoration: none;
         color: #5C5470;
         font-weight: bold; }
-        /* line 53, main/static/main/sass/home.scss */
-        #home nav ul li a:hover {
+        /* line 112, main/static/main/sass/home.scss */
+        #home .navigation-below-header ul li a:hover {
           color: #B9B4C7; }
 
-/* line 61, main/static/main/sass/home.scss */
+/* line 120, main/static/main/sass/home.scss */
 #home main {
   padding: 2rem 1rem; }
-  /* line 64, main/static/main/sass/home.scss */
+  /* line 123, main/static/main/sass/home.scss */
   #home main section {
     margin-bottom: 2rem; }
-    /* line 67, main/static/main/sass/home.scss */
+    /* line 126, main/static/main/sass/home.scss */
     #home main section h2 {
       margin-bottom: 1rem;
       color: #5C5470; }
-    /* line 72, main/static/main/sass/home.scss */
+    /* line 131, main/static/main/sass/home.scss */
     #home main section .experience-item, #home main section .education-item {
       background-color: #fff;
       padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin-bottom: 1rem; }
-      /* line 79, main/static/main/sass/home.scss */
+      /* line 138, main/static/main/sass/home.scss */
       #home main section .experience-item h3, #home main section .education-item h3 {
         margin-bottom: 0.5rem; }
-    /* line 84, main/static/main/sass/home.scss */
+    /* line 143, main/static/main/sass/home.scss */
     #home main section .skills-list {
       list-style: none;
       padding: 0; }
-      /* line 88, main/static/main/sass/home.scss */
+      /* line 147, main/static/main/sass/home.scss */
       #home main section .skills-list li {
         background-color: #fff;
         padding: 0.5rem 1rem;
@@ -131,49 +187,49 @@ ul {
         margin: 0.5rem 0.5rem 0 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 
-/* line 100, main/static/main/sass/home.scss */
+/* line 159, main/static/main/sass/home.scss */
 #home footer {
   background-color: #5C5470;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center; }
-  /* line 106, main/static/main/sass/home.scss */
+  /* line 165, main/static/main/sass/home.scss */
   #home footer a {
     color: #fff;
     text-decoration: none;
     font-weight: bold; }
-    /* line 111, main/static/main/sass/home.scss */
+    /* line 170, main/static/main/sass/home.scss */
     #home footer a:hover {
       color: #B9B4C7; }
 
 @media (max-width: 768px) {
-  /* line 119, main/static/main/sass/home.scss */
+  /* line 178, main/static/main/sass/home.scss */
   #home header .profile-pic {
     width: 100px;
     height: 100px; }
-  /* line 124, main/static/main/sass/home.scss */
+  /* line 183, main/static/main/sass/home.scss */
   #home header h1 {
     font-size: 1.5rem; }
-  /* line 128, main/static/main/sass/home.scss */
+  /* line 187, main/static/main/sass/home.scss */
   #home header p {
     font-size: 1rem; }
-  /* line 133, main/static/main/sass/home.scss */
-  #home nav ul {
+  /* line 192, main/static/main/sass/home.scss */
+  #home .navigation-below-header ul {
     flex-direction: column; }
-    /* line 136, main/static/main/sass/home.scss */
-    #home nav ul li {
+    /* line 195, main/static/main/sass/home.scss */
+    #home .navigation-below-header ul li {
       margin: 0.5rem 0; }
-  /* line 141, main/static/main/sass/home.scss */
+  /* line 200, main/static/main/sass/home.scss */
   #home main {
     padding: 1rem; }
-    /* line 144, main/static/main/sass/home.scss */
+    /* line 203, main/static/main/sass/home.scss */
     #home main .experience-item, #home main .education-item {
       padding: 0.5rem; }
-    /* line 148, main/static/main/sass/home.scss */
+    /* line 207, main/static/main/sass/home.scss */
     #home main .skills-list li {
       margin: 0.25rem 0.25rem 0 0;
       padding: 0.5rem; }
-  /* line 154, main/static/main/sass/home.scss */
+  /* line 213, main/static/main/sass/home.scss */
   #home footer {
     padding: 1rem; } }
 
@@ -253,9 +309,7 @@ ul {
 #post-form {
   padding: 20px;
   max-width: 600px;
-  /* Limiting maximum width */
-  margin: 0 auto;
-  /* Centering the form horizontally */ }
+  margin: 0 auto; }
   /* line 6, main/static/main/sass/post-form.scss */
   #post-form h1 {
     color: #5C5470;
@@ -270,28 +324,20 @@ ul {
     text-align: center; }
   /* line 20, main/static/main/sass/post-form.scss */
   #post-form form {
-    text-align: left;
-    /* Aligning the form elements to the left */ }
+    text-align: left; }
     /* line 23, main/static/main/sass/post-form.scss */
     #post-form form textarea {
       width: 100%;
-      /* Making the textarea full width */
       min-height: 200px;
-      /* Setting a minimum height */
       padding: 10px;
-      /* Adding padding for better readability */
       border-radius: 5px;
-      /* Rounded corners */
       border: 1px solid #ccc;
-      /* Adding a subtle border */
       font-size: 16px;
       line-height: 1.6; }
     /* line 33, main/static/main/sass/post-form.scss */
     #post-form form button[type="submit"] {
       display: block;
-      /* Displaying the button as a block element */
       margin: 20px auto 0;
-      /* Adding top margin and centering horizontally */
       background-color: #5C5470;
       color: #fff;
       border: none;
@@ -311,8 +357,7 @@ ul {
       font-size: 14px; }
     /* line 60, main/static/main/sass/post-form.scss */
     #post-form form textarea {
-      min-height: 150px;
-      /* Adjusting minimum height for smaller screens */ }
+      min-height: 150px; }
     /* line 64, main/static/main/sass/post-form.scss */
     #post-form form button[type="submit"] {
       padding: 8px 16px;
