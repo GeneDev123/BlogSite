@@ -122,63 +122,73 @@ ul {
           padding: 5px;
           font-size: 35px;
           border-radius: 10px;
-          display: none; }
-        /* line 80, main/static/main/sass/home.scss */
+          display: none;
+          text-decoration: none; }
+        /* line 81, main/static/main/sass/home.scss */
         #home header .header-content .social-media-links-container .links-container .social:hover {
           font-size: 60px; }
-        /* line 84, main/static/main/sass/home.scss */
-        #home header .header-content .social-media-links-container .links-container .email-container {
-          padding-top: 15px;
-          font-size: 13px; }
+        /* line 85, main/static/main/sass/home.scss */
+        #home header .header-content .social-media-links-container .links-container .download-resume-container {
+          margin-top: 20px;
+          cursor: pointer;
+          padding: 5px;
+          border-radius: 10px;
+          border: 4px solid #B9B4C7; }
+        /* line 93, main/static/main/sass/home.scss */
+        #home header .header-content .social-media-links-container .links-container .download-resume-container:hover {
+          background-color: #B9B4C7;
+          color: #5C5470; }
 
-/* line 93, main/static/main/sass/home.scss */
+/* line 102, main/static/main/sass/home.scss */
 #home .navigation-below-header {
   background-color: #fff;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
-  /* line 98, main/static/main/sass/home.scss */
+  /* line 107, main/static/main/sass/home.scss */
   #home .navigation-below-header ul {
     display: flex;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap; }
-    /* line 104, main/static/main/sass/home.scss */
+    /* line 113, main/static/main/sass/home.scss */
     #home .navigation-below-header ul li {
       margin: 0.5rem 1rem; }
-      /* line 107, main/static/main/sass/home.scss */
+      /* line 116, main/static/main/sass/home.scss */
       #home .navigation-below-header ul li a {
         text-decoration: none;
         color: #5C5470;
         font-weight: bold; }
-        /* line 112, main/static/main/sass/home.scss */
+        /* line 121, main/static/main/sass/home.scss */
         #home .navigation-below-header ul li a:hover {
           color: #B9B4C7; }
 
-/* line 120, main/static/main/sass/home.scss */
+/* line 129, main/static/main/sass/home.scss */
 #home main {
   padding: 2rem 1rem; }
-  /* line 123, main/static/main/sass/home.scss */
+  /* line 132, main/static/main/sass/home.scss */
   #home main section {
-    margin-bottom: 2rem; }
-    /* line 126, main/static/main/sass/home.scss */
-    #home main section h2 {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    /* line 136, main/static/main/sass/home.scss */
+    #home main section h1 {
       margin-bottom: 1rem;
-      color: #5C5470; }
-    /* line 131, main/static/main/sass/home.scss */
+      color: #5C5470;
+      font-size: 40px; }
+    /* line 142, main/static/main/sass/home.scss */
     #home main section .experience-item, #home main section .education-item {
       background-color: #fff;
       padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin-bottom: 1rem; }
-      /* line 138, main/static/main/sass/home.scss */
+      /* line 149, main/static/main/sass/home.scss */
       #home main section .experience-item h3, #home main section .education-item h3 {
         margin-bottom: 0.5rem; }
-    /* line 143, main/static/main/sass/home.scss */
+    /* line 154, main/static/main/sass/home.scss */
     #home main section .skills-list {
       list-style: none;
       padding: 0; }
-      /* line 147, main/static/main/sass/home.scss */
+      /* line 158, main/static/main/sass/home.scss */
       #home main section .skills-list li {
         background-color: #fff;
         padding: 0.5rem 1rem;
@@ -187,49 +197,83 @@ ul {
         margin: 0.5rem 0.5rem 0 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 
-/* line 159, main/static/main/sass/home.scss */
+/* line 172, main/static/main/sass/home.scss */
+#home #about h1 {
+  margin-bottom: 30px; }
+
+/* line 176, main/static/main/sass/home.scss */
+#home #about .about-content-container {
+  background-color: #5C5470;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px; }
+
+/* line 185, main/static/main/sass/home.scss */
+#home #experience .company-and-date-container {
+  font-weight: bold; }
+
+/* line 189, main/static/main/sass/home.scss */
+#home #experience .technology-content-container {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 50px; }
+  /* line 195, main/static/main/sass/home.scss */
+  #home #experience .technology-content-container .tech-item {
+    margin: 0px 5px;
+    border: 1px solid rgba(92, 84, 112, 0.6);
+    padding: 5px;
+    cursor: pointer; }
+    /* line 201, main/static/main/sass/home.scss */
+    #home #experience .technology-content-container .tech-item .tech-item-image {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      display: block; }
+
+/* line 212, main/static/main/sass/home.scss */
 #home footer {
   background-color: #5C5470;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center; }
-  /* line 165, main/static/main/sass/home.scss */
+  /* line 218, main/static/main/sass/home.scss */
   #home footer a {
     color: #fff;
     text-decoration: none;
     font-weight: bold; }
-    /* line 170, main/static/main/sass/home.scss */
+    /* line 223, main/static/main/sass/home.scss */
     #home footer a:hover {
       color: #B9B4C7; }
 
 @media (max-width: 768px) {
-  /* line 178, main/static/main/sass/home.scss */
+  /* line 231, main/static/main/sass/home.scss */
   #home header .profile-pic {
     width: 100px;
     height: 100px; }
-  /* line 183, main/static/main/sass/home.scss */
+  /* line 236, main/static/main/sass/home.scss */
   #home header h1 {
     font-size: 1.5rem; }
-  /* line 187, main/static/main/sass/home.scss */
+  /* line 240, main/static/main/sass/home.scss */
   #home header p {
     font-size: 1rem; }
-  /* line 192, main/static/main/sass/home.scss */
+  /* line 245, main/static/main/sass/home.scss */
   #home .navigation-below-header ul {
     flex-direction: column; }
-    /* line 195, main/static/main/sass/home.scss */
+    /* line 248, main/static/main/sass/home.scss */
     #home .navigation-below-header ul li {
       margin: 0.5rem 0; }
-  /* line 200, main/static/main/sass/home.scss */
+  /* line 253, main/static/main/sass/home.scss */
   #home main {
     padding: 1rem; }
-    /* line 203, main/static/main/sass/home.scss */
+    /* line 256, main/static/main/sass/home.scss */
     #home main .experience-item, #home main .education-item {
       padding: 0.5rem; }
-    /* line 207, main/static/main/sass/home.scss */
+    /* line 260, main/static/main/sass/home.scss */
     #home main .skills-list li {
       margin: 0.25rem 0.25rem 0 0;
       padding: 0.5rem; }
-  /* line 213, main/static/main/sass/home.scss */
+  /* line 266, main/static/main/sass/home.scss */
   #home footer {
     padding: 1rem; } }
 
