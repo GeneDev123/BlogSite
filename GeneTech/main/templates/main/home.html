@@ -7,18 +7,29 @@
 {% block main_content %}
   <div id="home">
     <header>
-      <div class="profile-image-container">
+      <div class="profile-image-container position-absolute">
         <img src="{% static 'main/assets/profile_pic.jpg' %}" alt="Profile Picture" class="profile-pic" id="profile-pic">
       </div>
       <div class="header-content">
+
+        <div class="download-resume-container desktop">
+          <div class="position-absolute" id="dl-resume-container">
+            Get My Resume
+          </div>
+        </div>
+
         <div class="name-container">
-          <div class="name position-absolute" id="name-content">
-            <div class="first-name">
+          <div class="name" id="name-content">
+            
+            <div class="full-name">
+              Eugene M. Reyes
+            </div>
+            <!-- <div class="first-name">
               Eugene
             </div>
             <div class="last-name">
               Reyes
-            </div>
+            </div> -->
             <div class="title">
               Software Developer | Full Stack Web Developer
             </div>
@@ -31,11 +42,17 @@
             <a href="{{ social_media_links.ig_link }}" target="_blank" id="ig_link" class="social fa-brands fa-instagram"></a>
             <a href="{{ social_media_links.linkedin_link }}" target="_blank" id="linkedin_link" class="social fa-brands fa-linkedin"></a>
             <a href="{{ social_media_links.github_link }}" target="_blank" id="github_link" class="social fa-brands fa-github"></a>
-            <div class="download-resume-container">Get My Resume</div>
           </div>
+
+          <div class="download-resume-container mobile">
+            <div id="dl-resume-container">
+              Get My Resume
+            </div>
+          </div>
+          
         </div>
       </div>
-  </header>
+    </header>
 
   <nav class="navigation-below-header">
       <ul>
@@ -243,8 +260,16 @@
 
       $(".profile-image-container").fadeIn(2000);
       $("#name-content").animate({
-        left: "-260px"
+        left: "90%",
+        marginLeft: "10px"
       }, 500);
+      $("#dl-resume-container").animate({
+        left: "25%",
+      }, 500);
+
+      if($(window).width() < 1024){
+        $(".download-resume-container.mobile").fadeIn(1000);
+      }
       $("#fb_link").fadeIn(1500);
       $("#ig_link").fadeIn(2000);
       $("#linkedin_link").fadeIn(2500);
