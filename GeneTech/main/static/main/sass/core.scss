@@ -23,3 +23,19 @@ ul{
 .position-absolute{
   position: absolute;
 }
+
+.desktop{
+  display: block;
+  
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.mobile{
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
