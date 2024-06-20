@@ -64,8 +64,7 @@ ul {
       display: block; }
       /* line 36, main/static/main/sass/navigation.scss */
       #navigation nav ul li {
-        display: block;
-        margin-bottom: 10px; } }
+        display: block; } }
 /* line 2, main/static/main/sass/home.scss */
 #home header {
   color: #fff;
@@ -469,7 +468,10 @@ ul {
 @media (max-width: 600px) {
   /* line 473, main/static/main/sass/home.scss */
   #home .name-container .name {
-    font-size: 40px !important; } }
+    font-size: 40px !important; }
+  /* line 479, main/static/main/sass/home.scss */
+  #home #skills .carousel-item h2 {
+    width: 100%; } }
 
 /* line 1, main/static/main/sass/posts.scss */
 #posts {
