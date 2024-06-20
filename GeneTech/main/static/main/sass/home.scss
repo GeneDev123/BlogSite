@@ -169,20 +169,6 @@
           margin-bottom: 0.5rem;
         }
       }
-
-      .skills-list {
-        list-style: none;
-        padding: 0;
-
-        li {
-          background-color: #fff;
-          padding: 0.5rem 1rem;
-          border-radius: 20px;
-          display: inline-block;
-          margin: 0.5rem 0.5rem 0 0;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-      }
     }
   }
 
@@ -198,6 +184,97 @@
       padding: 15px;
       border-radius: 15px;
     }
+  }
+
+  #skills {
+    .carousel-container{
+      background-color: #fff;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .carousel-item h2 {
+      font-size: 1.5em;
+      margin: auto;
+      margin-bottom: 25px;
+      color: #fff;
+      padding: 10px 0px;
+      width: 300px;
+      border-radius: 10px;
+      background-color: $primary-color;
+    }
+
+    .carousel-item .description-container {
+      font-size: 1.1em;
+      line-height: 1.4;
+      margin-bottom: 25px;
+    }
+
+    .images-container{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      margin-bottom: 50px;
+      justify-content: center;
+
+      .tech-item{
+        margin: 2px 5px;
+        border: 5px solid $secondary-color;
+        padding: 5px;
+        cursor: pointer;
+
+        .tech-item-image{
+          width: 75px;
+          height: 75px;
+          object-fit: contain;
+          display: block;
+        }
+      }
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      left: 0px;
+    }
+
+    .control-left, .control-right {
+      color: $primary-color;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .control-left:hover, .control-right:hover{
+      background-color: $primary-color;
+      color: #fff;
+      
+    }
+
   }
 
   #experience {
@@ -226,7 +303,6 @@
         }
       }
     }
-
   }
 
   footer {
@@ -234,14 +310,71 @@
     color: #fff;
     padding: 2rem 1rem;
     text-align: center;
-
+    // font-family: $font-family;
+  
     a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-
+  
       &:hover {
         color: $secondary-color;
+      }
+    }
+  
+    #contact {
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+  
+      #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+  
+        label {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+        }
+  
+        input, textarea {
+          width: 100%;
+          padding: 0.5rem;
+          margin-top: 0.5rem;
+          border: none;
+          border-radius: 5px;
+        }
+  
+        button {
+          margin-top: 1rem;
+          padding: 0.7rem 2rem;
+          background-color: $secondary-color;
+          border: none;
+          border-radius: 5px;
+          color: $primary-color;
+          font-weight: bold;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: darken($secondary-color, 10%);
+          }
+        }
+      }
+  
+      .social-media {
+        margin-top: 2rem;
+  
+        .social-icon {
+          margin: 0 0.5rem;
+          font-size: 1.5rem;
+  
+          &:hover {
+            color: $secondary-color;
+          }
+        }
       }
     }
   }
@@ -329,6 +462,16 @@
           color: $primary-color;
           font-weight: bolder;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #home{
+    .name-container{
+      .name{
+        font-size: 40px !important;
       }
     }
   }

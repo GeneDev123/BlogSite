@@ -57,11 +57,11 @@
   <nav class="navigation-below-header">
       <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#education">Education</a></li>
+          <!-- <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+          <!-- <li><a href="#education">Education</a></li> -->
           <li><a href="#contact">Contact</a></li>
       </ul>
   </nav>
@@ -85,6 +85,114 @@
           </p>
         </div>
 
+      </section>
+
+      <hr>
+
+      <section id="skills">
+        <h1>Skills</h1>
+
+        <div class="carousel-container">
+          
+          <div class="carousel">
+            <div class="carousel-item">
+              
+              <h2>JavaScript</h2>
+              
+              <div class="description-container">
+                Proficient in JavaScript for developing dynamic and interactive web pages, with expertise in the Vue.js framework, leveraging its powerful built-in solutions for component management, state handling, and routing. Additionally, skilled in utilizing the jQuery library to write complex, yet highly readable code, and adept at using the Axios library to efficiently manage HTTP requests and streamline data communication.
+              </div>
+
+              <div class="images-container">
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/js_icon.png' %}" alt="Js Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/vuejs_icon.jpg' %}" alt="VueJs Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/jquery_icon.png' %}" alt="jQuery Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/axios_icon.png' %}" alt="Axios Icon" class="tech-item-image">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+              
+              <h2>Python</h2>
+              
+              <div class="description-container">
+                Proficient in Python for developing fast-paced products and creating effective prototypes. Experienced in leveraging the Django framework to enable comprehensive full-stack web development. Skilled in utilizing Python's capabilities to gain a competitive edge in developing machine learning models and AI solutions.
+              </div>
+
+              <div class="images-container">
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/django_icon.png' %}" alt="Django Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/tensorflow_icon.png' %}" alt="tensorflow Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/sklearn_icon.png' %}" alt="sklearn Icon" class="tech-item-image">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+              
+              <h2>PHP</h2>
+              
+              <div class="description-container">
+                Proficient in using WordPress and PHP to create and manage visually stunning and efficient Content Management Systems (CMS). Possess extensive experience in developing and customizing plugins and themes to meet client specifications. Additionally, skilled in utilizing PHP within the CodeIgniter framework to implement robust and scalable systems, ensuring high performance and reliability.
+              </div>
+
+              <div class="images-container">
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/wordpress_icon.png' %}" alt="WordPress Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/codeigniter_icon.png' %}" alt="CodeIgniter Icon" class="tech-item-image">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+              
+              <h2>HTML/CSS</h2>
+              
+              <div class="description-container">
+                Proficient in using WordPress and PHP to create and manage visually stunning and efficient Content Management Systems (CMS). Possess extensive experience in developing and customizing plugins and themes to meet client specifications. Additionally, skilled in utilizing PHP within the CodeIgniter framework to implement robust and scalable systems, ensuring high performance and reliability.
+              </div>
+
+              <div class="images-container">
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/html_icon.png' %}" alt="HTML Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/css_icon.png' %}" alt="CSS Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/sass_icon.png' %}" alt="Sass Icon" class="tech-item-image">
+                </div>
+                <div class="tech-item">
+                  <img src="{% static 'main/assets/bootstrap_icon.png' %}" alt="Bootstrap Icon" class="tech-item-image">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="control-left" onclick="prev()">&#10094;</button>
+            <button class="control-right" onclick="next()">&#10095;</button>
+          </div>
+
+        </div>
       </section>
 
       <hr>
@@ -203,21 +311,7 @@
         </div>
       </section>
 
-      <section id="skills">
-          <h1>Skills</h1>
-          <ul class="skills-list">
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-              <li>WordPress</li>
-              <li>Django</li>
-              <li>Data Analytics</li>
-              <li>Machine Learning</li>
-              <li>AI</li>
-              <li>Web Development</li>
-              <li>Software Development</li>
-          </ul>
-      </section>
+      <!-- <hr>
 
       <section id="portfolio">
           <h1>Portfolio</h1>
@@ -226,7 +320,6 @@
               <h3>Project Title</h3>
               <p>Brief description of the project, technologies used, and your role.</p>
           </div>
-          <!-- Add more portfolio items as needed -->
       </section>
 
       <section id="testimonials">
@@ -234,7 +327,7 @@
           <div class="testimonial-item">
               <p>"Eugene is an outstanding developer with a keen eye for detail. His work on our project was exceptional." - Client Name</p>
           </div>
-          <!-- Add more testimonials as needed -->
+        
       </section>
 
       <section id="education">
@@ -244,15 +337,36 @@
               <p>University Name | Year</p>
               <p>Graduated with honors, specialized in software development and data analysis.</p>
           </div>
-      </section>
+      </section> -->
   </main>
 
   <footer>
-      <section id="contact">
-          <h1>Contact</h1>
-      </section>
+    <section id="contact">
+      <h1>Contact Me!</h1>
+
+      <div class="contact-me-description">If you have any questions, suggestions, or feedback, please feel free to reach out to me using the form below. I look forward to hearing from you!</div>
+
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+  
+        <button type="submit">Send</button>
+      </form>
+  
+      <div class="social-media">
+        <a href="{{ social_media_links.fb_link }}" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="{{ social_media_links.ig_link }}" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="{{ social_media_links.linkedin_link }}" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="{{ social_media_links.github_link }}" class="social-icon"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
   </footer>
-  </div>
 
   <script>
     //Container animations when page is loaded.
@@ -276,6 +390,8 @@
       $("#github_link").fadeIn(3000);
     });
 
+
+    // Smooth animation transition when the user clicked on a section
     document.querySelectorAll('.navigation-below-header a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -284,5 +400,36 @@
         targetElement.scrollIntoView({ behavior: 'smooth' });
       });
     });
+
+
+    // Section Skills Carousel transition
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const carousel = document.querySelector('.carousel');
+      const totalItems = document.querySelectorAll('.carousel-item').length;
+
+      if (index >= totalItems) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = totalItems - 1;
+      } else {
+        currentIndex = index;
+      }
+
+      const offset = -currentIndex * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    function next() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prev() {
+      showSlide(currentIndex - 1);
+    }
+
+    setInterval(next, 6000);
+   
   </script>
 {% endblock %}
