@@ -474,5 +474,11 @@
         font-size: 40px !important;
       }
     }
+
+    #skills {
+      .carousel-item h2 {
+        width: 100%;
+      }
+    }
   }
 }
