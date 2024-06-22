@@ -7,4 +7,5 @@ GeneTech/GeneTech/__pycache__
 GeneTech/main/__pycache__
 GeneTech/main/migrations/
 GeneTech/api/migrations/
+GeneTech/media/media/
 .env
