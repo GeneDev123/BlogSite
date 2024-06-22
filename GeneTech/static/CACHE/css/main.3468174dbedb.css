@@ -334,43 +334,59 @@ ul {
       object-fit: contain;
       display: block; }
 
-/* line 308, main/static/main/sass/home.scss */
+/* line 310, main/static/main/sass/home.scss */
+#home #education .education-item {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 315, main/static/main/sass/home.scss */
+  #home #education .education-item .university-logo-container {
+    width: 100%; }
+    /* line 318, main/static/main/sass/home.scss */
+    #home #education .education-item .university-logo-container .university-logo-image {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin: auto;
+      display: block; }
+
+/* line 329, main/static/main/sass/home.scss */
 #home footer {
   background-color: #5C5470;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center; }
-  /* line 315, main/static/main/sass/home.scss */
+  /* line 336, main/static/main/sass/home.scss */
   #home footer a {
     color: #fff;
     text-decoration: none;
     font-weight: bold; }
-    /* line 320, main/static/main/sass/home.scss */
+    /* line 341, main/static/main/sass/home.scss */
     #home footer a:hover {
       color: #B9B4C7; }
-  /* line 326, main/static/main/sass/home.scss */
+  /* line 347, main/static/main/sass/home.scss */
   #home footer #contact h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem; }
-  /* line 331, main/static/main/sass/home.scss */
+  /* line 352, main/static/main/sass/home.scss */
   #home footer #contact #contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 600px;
     margin: 0 auto; }
-    /* line 338, main/static/main/sass/home.scss */
+    /* line 359, main/static/main/sass/home.scss */
     #home footer #contact #contact-form label {
       margin-top: 1rem;
       font-size: 1.2rem; }
-    /* line 343, main/static/main/sass/home.scss */
+    /* line 364, main/static/main/sass/home.scss */
     #home footer #contact #contact-form input, #home footer #contact #contact-form textarea {
       width: 100%;
       padding: 0.5rem;
       margin-top: 0.5rem;
       border: none;
       border-radius: 5px; }
-    /* line 351, main/static/main/sass/home.scss */
+    /* line 372, main/static/main/sass/home.scss */
     #home footer #contact #contact-form button {
       margin-top: 1rem;
       padding: 0.7rem 2rem;
@@ -380,22 +396,22 @@ ul {
       color: #5C5470;
       font-weight: bold;
       cursor: pointer; }
-      /* line 361, main/static/main/sass/home.scss */
+      /* line 382, main/static/main/sass/home.scss */
       #home footer #contact #contact-form button:hover {
         background-color: #9e97b1; }
-  /* line 367, main/static/main/sass/home.scss */
+  /* line 388, main/static/main/sass/home.scss */
   #home footer #contact .social-media {
     margin-top: 2rem; }
-    /* line 370, main/static/main/sass/home.scss */
+    /* line 391, main/static/main/sass/home.scss */
     #home footer #contact .social-media .social-icon {
       margin: 0 0.5rem;
       font-size: 1.5rem; }
-      /* line 374, main/static/main/sass/home.scss */
+      /* line 395, main/static/main/sass/home.scss */
       #home footer #contact .social-media .social-icon:hover {
         color: #B9B4C7; }
 
 @media (max-width: 1024px) {
-  /* line 385, main/static/main/sass/home.scss */
+  /* line 406, main/static/main/sass/home.scss */
   #home header {
     position: static;
     display: block;
@@ -403,17 +419,17 @@ ul {
     background-color: #5C5470;
     background-image: none;
     min-height: initial; }
-    /* line 393, main/static/main/sass/home.scss */
+    /* line 414, main/static/main/sass/home.scss */
     #home header .profile-image-container {
       width: 100%;
       height: 100%;
       display: block;
       position: static;
       border: none; }
-    /* line 401, main/static/main/sass/home.scss */
+    /* line 422, main/static/main/sass/home.scss */
     #home header .header-content {
       width: 100%; }
-      /* line 405, main/static/main/sass/home.scss */
+      /* line 426, main/static/main/sass/home.scss */
       #home header .header-content .name-container .name {
         position: static;
         width: 95%;
@@ -424,29 +440,29 @@ ul {
         transform: none;
         margin: 10px auto;
         margin-left: -100%; }
-        /* line 416, main/static/main/sass/home.scss */
+        /* line 437, main/static/main/sass/home.scss */
         #home header .header-content .name-container .name .full-name {
           letter-spacing: normal; }
-        /* line 420, main/static/main/sass/home.scss */
+        /* line 441, main/static/main/sass/home.scss */
         #home header .header-content .name-container .name .title {
           font-size: 3.5vw !important; }
-      /* line 426, main/static/main/sass/home.scss */
+      /* line 447, main/static/main/sass/home.scss */
       #home header .header-content .social-media-links-container {
         padding: 20px 0px; }
-        /* line 429, main/static/main/sass/home.scss */
+        /* line 450, main/static/main/sass/home.scss */
         #home header .header-content .social-media-links-container .links-container {
           position: static;
           text-align: center;
           width: 90%;
           justify-content: space-evenly;
           margin: auto; }
-          /* line 436, main/static/main/sass/home.scss */
+          /* line 457, main/static/main/sass/home.scss */
           #home header .header-content .social-media-links-container .links-container .social {
             font-size: 12vw; }
-          /* line 440, main/static/main/sass/home.scss */
+          /* line 461, main/static/main/sass/home.scss */
           #home header .header-content .social-media-links-container .links-container .social:hover {
             font-size: 13vw; }
-      /* line 446, main/static/main/sass/home.scss */
+      /* line 467, main/static/main/sass/home.scss */
       #home header .header-content .download-resume-container {
         cursor: pointer;
         padding: 10px;
@@ -459,19 +475,22 @@ ul {
         margin-top: 20px;
         margin-bottom: 10px;
         display: none; }
-      /* line 460, main/static/main/sass/home.scss */
+      /* line 481, main/static/main/sass/home.scss */
       #home header .header-content .download-resume-container:hover {
         background-color: #B9B4C7;
         color: #5C5470;
         font-weight: bolder; } }
 
 @media (max-width: 600px) {
-  /* line 473, main/static/main/sass/home.scss */
+  /* line 494, main/static/main/sass/home.scss */
   #home .name-container .name {
     font-size: 40px !important; }
-  /* line 479, main/static/main/sass/home.scss */
+  /* line 500, main/static/main/sass/home.scss */
   #home #skills .carousel-item h2 {
-    width: 100%; } }
+    width: 100%; }
+  /* line 507, main/static/main/sass/home.scss */
+  #home #education .education-item {
+    width: 90%; } }
 
 /* line 1, main/static/main/sass/posts.scss */
 #posts {
