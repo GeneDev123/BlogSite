@@ -13,9 +13,9 @@
       <div class="header-content">
 
         <div class="download-resume-container desktop">
-          <div class="position-absolute" id="dl-resume-container">
+          <a id="dl-resume-container" href="{% url 'download_latest_resume' %}" class="download-resume-button position-absolute">
             Get My Resume
-          </div>
+          </a>
         </div>
 
         <div class="name-container">
@@ -45,9 +45,9 @@
           </div>
 
           <div class="download-resume-container mobile">
-            <div id="dl-resume-container">
+            <a id="dl-resume-container" href="{% url 'download_latest_resume' %}" class="download-resume-button">
               Get My Resume
-            </div>
+            </a>
           </div>
           
         </div>
@@ -352,16 +352,17 @@
 
       <div class="contact-me-description">If you have any questions, suggestions, or feedback, please feel free to reach out to me using the form below. I look forward to hearing from you!</div>
 
-      <form id="contact-form">
+      <form id="contact-form" method="post">
+        {% csrf_token %}
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
-  
+      
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
-  
+      
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-  
+      
         <button type="submit">Send</button>
       </form>
   

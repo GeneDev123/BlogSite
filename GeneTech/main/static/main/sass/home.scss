@@ -34,6 +34,10 @@
       .download-resume-container{
         position: relative;
 
+        .download-resume-button{
+          text-decoration: none;
+        }
+
         .position-absolute{
           position: absolute;
           cursor: pointer;
@@ -476,9 +480,17 @@
           margin-top: 20px;
           margin-bottom: 10px;
           display: none;
+
+          .download-resume-button{
+            color: $primary-color;
+          }
         }
 
         .download-resume-container:hover{
+          .download-resume-button{
+            color: $primary-color;
+          }
+          
           background-color: $secondary-color;
           color: $primary-color;
           font-weight: bolder;

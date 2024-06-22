@@ -3,9 +3,12 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
-from .models import BlogPost
+from .models import BlogPost, ContactMessage
 from .forms import BlogPostForm
 from django.conf import settings
+from django.utils import timezone
+from .models import FileUpload
+from django.http import HttpResponse
 
 FB_LINK = settings.FB_LINK
 IG_LINK = settings.IG_LINK
@@ -21,11 +24,35 @@ def home(request):
     'linkedin_link': LINKEDIN_LINK,    
   }
 
+  if request.method == 'POST':
+    name = request.POST.get('name')
+    email = request.POST.get('email')
+    message = request.POST.get('message')
+
+    contact_message = ContactMessage(name=name, email=email, message=message, timestamp=timezone.now())
+    contact_message.save()
+
+    return redirect(reverse('home'))
+
   context = {
     'social_media_links': social_media_links,
   }
 
   return render(request, 'main/home.html', context)
+
+def download_latest_resume(request):
+  latest_resume = FileUpload.objects.filter(category='resume').order_by('-date_modified').first()
+
+  if latest_resume:
+    resume_file_path = latest_resume.file.path
+    original_filename = latest_resume.file_name
+
+    with open(resume_file_path, 'rb') as resume_file:
+      response = HttpResponse(resume_file.read(), content_type='application/octet-stream')
+      response['Content-Disposition'] = 'attachment; filename="{}"'.format(original_filename)
+      return response
+
+  return HttpResponse('No resume file found.', status=404)
 
 class BlogPostListView(ListView):
   model = BlogPost
