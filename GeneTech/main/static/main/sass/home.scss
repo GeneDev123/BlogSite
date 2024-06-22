@@ -305,6 +305,27 @@
     }
   }
 
+  #education{
+
+    .education-item{
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .university-logo-container{
+        width: 100%;
+
+        .university-logo-image{
+          max-width: 100%;
+          height: auto;
+          object-fit: contain;
+          margin: auto;
+          display: block;
+        }
+      }
+    }
+  }
+
   footer {
     background-color: $primary-color;
     color: #fff;
@@ -478,6 +499,13 @@
     #skills {
       .carousel-item h2 {
         width: 100%;
+      }
+    }
+
+    #education{
+
+      .education-item{
+        width: 90%;
       }
     }
   }
